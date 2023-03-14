@@ -1,6 +1,6 @@
 <h1 align="center">Forkify App</h1>
 <p align="center">
-    <img src="./src/img/logo.png" alt="Logo" width="30%" height="auto">
+    <img src="./src/img/favicon.png" alt="Logo" width="15%" height="auto">
  </p>
 
 <p align="center">
@@ -32,6 +32,7 @@ Forkify is a recipe search app that allows users to search for and save their fa
   <img alt="Forkify App" src="./src/img/forkify-app-screenshot.png" width="100%" />
 </p>
 
+
 ## 📈 Flowchart
 
 <p align="center">
@@ -44,6 +45,12 @@ Forkify is a recipe search app that allows users to search for and save their fa
 <p align="center">
   <img alt="Recipe Loading Architecture" src="./forkify-architecture-recipe-loading.png" width="100%" />
 </p>
+
+## Development Status
+
+This project is still under development and is not yet complete. I'm continuously working on adding new features and improvements.
+
+I am aware of some known issues and limitations, and are actively working on resolving them. If you encounter any issues or have any suggestions for improvement, feel free to submit an issue or pull request.
 
 ## ⚙️ Installation
 - Clone this repo:
