@@ -25,34 +25,36 @@
 <h2 align="center">
 Check out the <a href="https://your-demo-link.com" target="_blank">live demo of Forkify here</a>.
 </h2>
-</br>
-
+<p align="center">
+Forkify is a recipe search app that allows users to search for and save their favorite recipes. The app fetches recipes from a large database using an API and allows users to adjust serving sizes, which dynamically adjusts ingredient lists and cooking instructions. Built with modern web technologies like HTML5, CSS3, and JavaScript, the app features a clean and intuitive user interface. It also employs advanced JavaScript concepts like asynchronous programming, ES6 modules, and object-oriented programming to deliver a seamless user experience. Forkify was created by Jonas Smechmann in his Udemy course and this app was built as part of a personal project to learn JavaScript.
+</p>
 <p align="center">
   <img alt="Forkify App" src="./src/img/forkify-app-screenshot.png" width="100%" />
 </p>
 
-
-## Flowchart
+## 📈 Flowchart
 
 <p align="center">
   <img alt="Flowchart" src="./forkify-flowchart-part-3.png" width="100%" />
 </p>
 
 
-## Recipe Loading Architecture
+## 🏛 Recipe Loading Architecture
 
 <p align="center">
   <img alt="Recipe Loading Architecture" src="./forkify-architecture-recipe-loading.png" width="100%" />
 </p>
 
-## Install
-
+## ⚙️ Installation
+- Clone this repo:
+```sh
+git clone https://github.com/CodePapa360/Forkify-Recipe-App.git
+```
+- Install dependencies:
 ```sh
 npm install
 ```
-
-## Usage
-
+- Run the app:
 ```sh
 npm start
 ```
@@ -74,7 +76,7 @@ This app was created as part of [Jonas Smechmann](https://twitter.com/jonasschme
 
 Special thanks to Jonas for his excellent teaching and guidance throughout the course.
 
-## Show your support
+## 🤗 Show your support
 
 Give a ⭐️ if this project helped you!
 
