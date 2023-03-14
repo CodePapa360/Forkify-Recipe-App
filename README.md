@@ -1,6 +1,6 @@
 <h1 align="center">Forkify App</h1>
 <p align="center">
-    <img src="./src/img/logo.png" alt="Logo" width="80" height="80">
+    <img src="./src/img/logo.png" alt="Logo" width="30%" height="auto">
  </p>
 
 <p align="center">
@@ -22,15 +22,15 @@
   </a>
 </p>
 
+<h2 align="center">
+Check out the <a href="https://your-demo-link.com" target="_blank">live demo of Forkify here</a>.
+</h2>
+</br>
+
 <p align="center">
-  <img alt="Forkify App" src="./forkify-app-screenshot.png" width="100%" />
+  <img alt="Forkify App" src="./src/img/forkify-app-screenshot.png" width="100%" />
 </p>
 
-## Recipe Loading Architecture
-
-<p align="center">
-  <img alt="Recipe Loading Architecture" src="./forkify-architecture-recipe-loading.png" width="100%" />
-</p>
 
 ## Flowchart
 
@@ -38,9 +38,12 @@
   <img alt="Flowchart" src="./forkify-flowchart-part-3.png" width="100%" />
 </p>
 
-## Demo
 
-Check out the <a href="https://your-demo-link.com" target="_blank">live demo of Forkify here</a>.
+## Recipe Loading Architecture
+
+<p align="center">
+  <img alt="Recipe Loading Architecture" src="./forkify-architecture-recipe-loading.png" width="100%" />
+</p>
 
 ## Install
 
