@@ -70,7 +70,7 @@ Feel free to contact me with any questions or feedback!
 
 ## Credits
 
-This app was created as part of Jonas Smechmann's Udemy course [The Complete JavaScript Course 2023: From Zero to Expert!](https://www.udemy.com/course/the-complete-javascript-course/). 
+This app was created as part of [Jonas Smechmann](https://twitter.com/jonasschmedtman)'s Udemy course [The Complete JavaScript Course 2023: From Zero to Expert!](https://www.udemy.com/course/the-complete-javascript-course/). 
 
 Special thanks to Jonas for his excellent teaching and guidance throughout the course.
 
