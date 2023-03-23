@@ -33,14 +33,14 @@ Forkify is a recipe search app that allows users to search for and save their fa
 </p>
 
 
-## 📈 Flowchart
+## Flowchart
 
 <p align="center">
   <img alt="Flowchart" src="./forkify-flowchart-part-3.png" width="100%" />
 </p>
 
 
-## 🏛 Recipe Loading Architecture
+## Recipe Loading Architecture
 
 <p align="center">
   <img alt="Recipe Loading Architecture" src="./forkify-architecture-recipe-loading.png" width="100%" />
@@ -52,7 +52,7 @@ This project is still under development and is not yet complete. I'm continuousl
 
 I am aware of some known issues and limitations, and are actively working on resolving them. If you encounter any issues or have any suggestions for improvement, feel free to submit an issue or pull request.
 
-## ⚙️ Installation
+## Installation
 - Clone this repo:
 ```sh
 git clone https://github.com/CodePapa360/Forkify-Recipe-App.git
@@ -83,10 +83,10 @@ This app was created as part of [Jonas Smechmann](https://twitter.com/jonasschme
 
 Special thanks to Jonas for his excellent teaching and guidance throughout the course.
 
-## 🤗 Show your support
+## Show your support
 
 Give a ⭐️ if this project helped you!
 
-## 📝 License
+## License
 
 This project is [MIT](https://github.com/codepapa360/Forkify-Recipe-App/blob/master/LICENSE) licensed.
