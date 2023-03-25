@@ -26,12 +26,26 @@
 Check out the <a href="https://forkify-recipe-app-codepapa360.netlify.app/" target="_blank">live demo of Forkify here</a>.
 </h2>
 <p align="left">
-Forkify is a recipe search app that allows users to search for and save their favorite recipes. The app fetches recipes from a large database using an API and allows users to adjust serving sizes, which dynamically adjusts ingredient lists and cooking instructions. Built with modern web technologies like HTML5, CSS3, and JavaScript, the app features a clean and intuitive user interface. It also employs advanced JavaScript concepts like asynchronous programming, ES6 modules, and object-oriented programming to deliver a seamless user experience. Forkify was created by Jonas Smechmann in his Udemy course and this app was built as part of a personal project to learn JavaScript.
+Forkify is a recipe search and saving app, built with HTML5, CSS3, and JavaScript. It features an intuitive user interface and dynamic serving size adjustment. The app uses advanced JavaScript concepts like asynchronous programming, ES6 modules, and object-oriented programming. Forkify was created by Jonas Smechmann in his Udemy course and this app was built as part of a personal project to learn JavaScript.
 </p>
+
+## Features
+- Search for recipes: Find recipes using keywords or ingredients.
+- View recipe details: See ingredients, cooking instructions, and serving size.
+- Bookmark recipes: Save your favorite recipes for later.
+- Add recipes: Create and share your own recipes.
+- Pagination: Easily navigate search results.
+
+## Built with
+- JavaScript
+- CSS3
+- HTML5
+- Parcel
+- NPM
+
 <p align="center">
   <img alt="Forkify App" src="./src/img/forkify-app-screenshot.png" width="100%" />
 </p>
-
 
 ## Flowchart
 
@@ -45,12 +59,6 @@ Forkify is a recipe search app that allows users to search for and save their fa
 <p align="center">
   <img alt="Recipe Loading Architecture" src="./forkify-architecture-recipe-loading.png" width="100%" />
 </p>
-
-## Development Status
-
-This project is still under development and is not yet complete. I'm continuously working on adding new features and improvements.
-
-I am aware of some known issues and limitations, and are actively working on resolving them. If you encounter any issues or have any suggestions for improvement, feel free to submit an issue or pull request.
 
 ## Installation
 - Clone this repo:
@@ -85,7 +93,7 @@ Special thanks to Jonas for his excellent teaching and guidance throughout the c
 
 ## Show your support
 
-Give a ⭐️ if this project helped you!
+Give a ⭐️ if you liked this project!
 
 ## License
 
