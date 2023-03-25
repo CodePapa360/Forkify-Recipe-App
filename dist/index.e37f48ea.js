@@ -3099,7 +3099,7 @@ class View {
             <div class="message">
               <div>
                 <svg>
-                  <use href="${(0, _iconsSvgDefault.default)}#icon-smile></use>
+                  <use href="${(0, _iconsSvgDefault.default)}#icon-smile"></use>
                 </svg>
               </div>
               <p>${message}</p>
