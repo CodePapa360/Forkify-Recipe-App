@@ -12,6 +12,14 @@
   z-index: 1000;
   transition: all 0.5s;
 
+  //mobile
+  @media only screen and (max-width: $bp-mobile-med) {
+    position: absolute;
+    width: 90%;
+    top: 5%;
+    transform: translateX(-50%);
+  }
+
   .btn--close-modal {
     font-family: inherit;
     color: inherit;
@@ -47,11 +55,23 @@
   grid-template-columns: 1fr 1fr;
   gap: 4rem 6rem;
 
+  //mobile
+  @media only screen and (max-width: $bp-mobile-med) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
   &__column {
     display: grid;
     grid-template-columns: 1fr 2.8fr;
     align-items: center;
     gap: 1.5rem;
+
+    //mobile
+    @media only screen and (max-width: $bp-mobile-med) {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
 
     & label {
       font-size: 1.5rem;
@@ -95,5 +115,6 @@
   &__btn {
     grid-column: 1 / -1;
     justify-self: center;
+    margin-top: 1rem;
   }
 }

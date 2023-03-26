@@ -16,6 +16,11 @@ $bp-medium: 61.25em; // 980px
 $bp-small: 37.5em; // 600px
 $bp-smallest: 31.25em; // 500px
 
+//mobile
+$bp-mobile: 43.75em; // 700px
+$bp-mobile-med: 48.75em; // 780px
+$header-size-mobile: 18rem;
+
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +42,7 @@ html {
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   color: $color-grey-dark-1;
@@ -60,12 +65,23 @@ body {
   grid-template-rows: 10rem minmax(100rem, auto);
   grid-template-columns: 1fr 2fr;
   grid-template-areas:
-    'head head'
-    'list recipe';
+    "head head"
+    "list recipe";
 
   @media only screen and (max-width: $bp-large) {
     max-width: 100%;
     margin: 0;
     border-radius: 0;
+  }
+
+  //Mobile design
+  @media only screen and (max-width: $bp-mobile) {
+    grid-template-rows: unset;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "head"
+      "list"
+      "recipe";
+    min-height: 100vh;
   }
 }
