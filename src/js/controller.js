@@ -118,14 +118,33 @@ const controlAddRecipe = async function (newRecipe) {
     window.history.pushState(null, "", `#${model.state.recipe.id}`);
 
     //Close form window
-    setTimeout(function () {
-      addRecipeView.toggleWindow();
-    }, MODAL_CLOSE_SEC * 1000);
+    // setTimeout(function () {
+    //   addRecipeView.toggleWindow();
+    // }, MODAL_CLOSE_SEC * 1000);
+
+    // setTimeout(function () {
+    //   addRecipeView.resetFormView();
+    // }, 3 * 1000);
+    // addRecipeView.resetFormView();
   } catch (err) {
     console.error("😞", err);
     addRecipeView.renderError(err.message);
   }
 };
+
+// opening the recipe view on mobile devices
+const openRecipe = function () {
+  const element = document.querySelector(".recipe");
+  const top = document.querySelector(".container");
+
+  window.addEventListener("hashchange", function () {
+    element.classList.add("recipe-show");
+    top.scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+};
+openRecipe();
 
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
@@ -135,6 +154,8 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+
+  recipeView.addHandlerCloseRecipe();
 };
 
 init();

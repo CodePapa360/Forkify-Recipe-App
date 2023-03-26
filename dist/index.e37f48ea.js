@@ -655,15 +655,31 @@ const controlAddRecipe = async function(newRecipe) {
         (0, _bookmarksViewJsDefault.default).render(_modelJs.state.bookmarks);
         //Change id in the url
         window.history.pushState(null, "", `#${_modelJs.state.recipe.id}`);
-        //Close form window
-        setTimeout(function() {
-            (0, _addRecipeViewJsDefault.default).toggleWindow();
-        }, (0, _configJs.MODAL_CLOSE_SEC) * 1000);
+    //Close form window
+    // setTimeout(function () {
+    //   addRecipeView.toggleWindow();
+    // }, MODAL_CLOSE_SEC * 1000);
+    // setTimeout(function () {
+    //   addRecipeView.resetFormView();
+    // }, 3 * 1000);
+    // addRecipeView.resetFormView();
     } catch (err) {
         console.error("\uD83D\uDE1E", err);
         (0, _addRecipeViewJsDefault.default).renderError(err.message);
     }
 };
+// opening the recipe view on mobile devices
+const openRecipe = function() {
+    const element = document.querySelector(".recipe");
+    const top = document.querySelector(".container");
+    window.addEventListener("hashchange", function() {
+        element.classList.add("recipe-show");
+        top.scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+};
+openRecipe();
 const init = function() {
     (0, _bookmarksViewJsDefault.default).addHandlerRender(controlBookmarks);
     (0, _recipeViewJsDefault.default).addHandlerRender(controlRecipes);
@@ -672,6 +688,7 @@ const init = function() {
     (0, _searchViewJsDefault.default).addHandlerSearch(controlSearchResults);
     (0, _paginationViewJsDefault.default).addHandlerClick(controlPagination);
     (0, _addRecipeViewJsDefault.default).addHandlerUpload(controlAddRecipe);
+    (0, _recipeViewJsDefault.default).addHandlerCloseRecipe();
 };
 init();
 
@@ -2927,6 +2944,13 @@ class RecipeView extends (0, _viewJsDefault.default) {
             "load"
         ].forEach((ev)=>window.addEventListener(ev, handler));
     }
+    addHandlerCloseRecipe() {
+        this._parentElement.addEventListener("click", function(e) {
+            const btnRecipeClose = e.target.closest(".recipe__btn-close");
+            if (!btnRecipeClose) return;
+            this.classList.remove("recipe-show");
+        });
+    }
     addHandlerUpdateServings(handler) {
         this._parentElement.addEventListener("click", function(e) {
             const btn = e.target.closest(".btn--update-servings");
@@ -2944,6 +2968,7 @@ class RecipeView extends (0, _viewJsDefault.default) {
     }
     _generateMarkup() {
         return `
+    <div class="recipe__btn-close">X</div>
     <figure class="recipe__fig">
           <img src="${this._data.image}" alt="${this._data.title}" class="recipe__img" />
           <h1 class="recipe__title">
