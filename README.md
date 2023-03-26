@@ -4,7 +4,7 @@
  </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/version-2.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://forkify-recipe-app-codepapa360.netlify.app/" target="_blank">
     <img alt="Demo" src="https://img.shields.io/badge/demo-online-green.svg" />
   </a>
@@ -35,6 +35,7 @@ Forkify is a recipe search and saving app, built with HTML5, CSS3, and JavaScrip
 - Bookmark recipes: Save your favorite recipes for later.
 - Add recipes: Create and share your own recipes.
 - Pagination: Easily navigate search results.
+- Responsive Design
 
 ## Built with
 - JavaScript
