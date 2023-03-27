@@ -30,6 +30,7 @@ Forkify is a recipe search and saving app, built with HTML5, CSS3, and JavaScrip
 </p>
 
 ## Features
+
 - Search for recipes: Find recipes using keywords or ingredients.
 - View recipe details: See ingredients, cooking instructions, and serving size.
 - Bookmark recipes: Save your favorite recipes for later.
@@ -38,6 +39,7 @@ Forkify is a recipe search and saving app, built with HTML5, CSS3, and JavaScrip
 - Responsive Design
 
 ## Built with
+
 - JavaScript
 - CSS3
 - HTML5
@@ -45,7 +47,7 @@ Forkify is a recipe search and saving app, built with HTML5, CSS3, and JavaScrip
 - NPM
 
 <p align="center">
-  <img alt="Forkify App" src="./src/img/forkify-app-screenshot.png" width="100%" />
+  <img alt="Forkify App" src="./src/img/forkify-alamin-screenshot.png" width="100%" />
 </p>
 
 ## Flowchart
@@ -54,7 +56,6 @@ Forkify is a recipe search and saving app, built with HTML5, CSS3, and JavaScrip
   <img alt="Flowchart" src="./forkify-flowchart-part-3.png" width="100%" />
 </p>
 
-
 ## Recipe Loading Architecture
 
 <p align="center">
@@ -62,15 +63,21 @@ Forkify is a recipe search and saving app, built with HTML5, CSS3, and JavaScrip
 </p>
 
 ## Installation
+
 - Clone this repo:
+
 ```sh
 git clone https://github.com/CodePapa360/Forkify-Recipe-App.git
 ```
+
 - Install dependencies:
+
 ```sh
 npm install
 ```
+
 - Run the app:
+
 ```sh
 npm start
 ```
@@ -88,7 +95,7 @@ Feel free to contact me with any questions or feedback!
 
 ## Credits
 
-This app was created as part of [Jonas Smechmann](https://twitter.com/jonasschmedtman)'s Udemy course [The Complete JavaScript Course 2023: From Zero to Expert!](https://www.udemy.com/course/the-complete-javascript-course/). 
+This app was created as part of [Jonas Smechmann](https://twitter.com/jonasschmedtman)'s Udemy course [The Complete JavaScript Course 2023: From Zero to Expert!](https://www.udemy.com/course/the-complete-javascript-course/).
 
 Special thanks to Jonas for his excellent teaching and guidance throughout the course.
 
