@@ -668,18 +668,6 @@ const controlAddRecipe = async function(newRecipe) {
         (0, _addRecipeViewJsDefault.default).renderError(err.message);
     }
 };
-// opening the recipe view on mobile devices
-const openRecipe = function() {
-    const element = document.querySelector(".recipe");
-    const top = document.querySelector(".container");
-    window.addEventListener("hashchange", function() {
-        element.classList.add("recipe-show");
-        top.scrollIntoView({
-            behavior: "smooth"
-        });
-    });
-};
-openRecipe();
 const init = function() {
     (0, _bookmarksViewJsDefault.default).addHandlerRender(controlBookmarks);
     (0, _recipeViewJsDefault.default).addHandlerRender(controlRecipes);
@@ -689,6 +677,7 @@ const init = function() {
     (0, _paginationViewJsDefault.default).addHandlerClick(controlPagination);
     (0, _addRecipeViewJsDefault.default).addHandlerUpload(controlAddRecipe);
     (0, _recipeViewJsDefault.default).addHandlerCloseRecipe();
+    (0, _recipeViewJsDefault.default).openRecipe();
 };
 init();
 
@@ -2944,6 +2933,14 @@ class RecipeView extends (0, _viewJsDefault.default) {
             "load"
         ].forEach((ev)=>window.addEventListener(ev, handler));
     }
+    // Opening the recipe view on mobile devices
+    openRecipe = function() {
+        const element = document.querySelector(".recipe");
+        window.addEventListener("hashchange", function() {
+            element.classList.add("recipe-show");
+        });
+    };
+    // Closing the recipe view on mobile devices
     addHandlerCloseRecipe() {
         this._parentElement.addEventListener("click", function(e) {
             const btnRecipeClose = e.target.closest(".recipe__btn-close");

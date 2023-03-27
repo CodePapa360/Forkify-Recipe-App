@@ -126,6 +126,11 @@
   background: none;
   cursor: pointer;
 
+  @media only screen and (max-width: $bp-mobile) {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
   svg {
     height: 100%;
     width: 100%;

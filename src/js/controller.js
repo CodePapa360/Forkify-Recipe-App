@@ -132,20 +132,6 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
-// opening the recipe view on mobile devices
-const openRecipe = function () {
-  const element = document.querySelector(".recipe");
-  const top = document.querySelector(".container");
-
-  window.addEventListener("hashchange", function () {
-    element.classList.add("recipe-show");
-    top.scrollIntoView({
-      behavior: "smooth",
-    });
-  });
-};
-openRecipe();
-
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
@@ -154,8 +140,8 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-
   recipeView.addHandlerCloseRecipe();
+  recipeView.openRecipe();
 };
 
 init();
