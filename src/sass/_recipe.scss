@@ -2,9 +2,15 @@
   background-color: $color-grey-light-1;
 
   @media only screen and (max-width: $bp-mobile) {
-    position: absolute;
-    top: 6rem;
+    position: fixed;
+    top: 0;
     left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 15rem;
+    min-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   ///////////
@@ -35,8 +41,12 @@
   &__btn-close {
     display: none;
     font-size: 4rem;
-    padding: 0.2rem 2rem;
-    background-color: $color-grey-dark-1;
+    padding: 0.1rem 2rem;
+    background-image: linear-gradient(
+      to right bottom,
+      $color-grad-1,
+      $color-grad-2
+    );
     color: $color-grey-light-1;
     border-radius: 50%;
     position: absolute;
@@ -48,7 +58,11 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 
     &:active {
-      background-color: $color-grey-dark-2;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-grad-2,
+        $color-grad-1
+      );
     }
 
     @media only screen and (max-width: $bp-mobile) {
@@ -75,6 +89,11 @@
     width: 50%;
     line-height: 1.95;
     text-align: center;
+
+    //mobile
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 2.1rem;
+    }
 
     span {
       -webkit-box-decoration-break: clone;
@@ -240,8 +259,9 @@
 //////////////////
 @media only screen and (max-width: $bp-mobile) {
   .recipe {
-    transform: translateX(-100%);
-    transition: transform 0.5s ease-in-out;
+    transform: translateX(100%);
+    transition: transform 0.4s;
+    transition-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
   }
   .recipe-show {
     transform: translateX(0%);

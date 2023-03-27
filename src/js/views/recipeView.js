@@ -14,6 +14,15 @@ class RecipeView extends View {
     );
   }
 
+  // Opening the recipe view on mobile devices
+  openRecipe = function () {
+    const element = document.querySelector(".recipe");
+    window.addEventListener("hashchange", function () {
+      element.classList.add("recipe-show");
+    });
+  };
+
+  // Closing the recipe view on mobile devices
   addHandlerCloseRecipe() {
     this._parentElement.addEventListener("click", function (e) {
       const btnRecipeClose = e.target.closest(".recipe__btn-close");

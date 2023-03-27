@@ -180,6 +180,13 @@ body {
   border: none;
 }
 
+@media only screen and (max-width: 43.75em) {
+  .btn--tiny {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
+
 .btn--tiny svg {
   height: 100%;
   width: 100%;
@@ -558,7 +565,7 @@ body {
   color: #918581;
   margin-top: 4rem;
   padding: 0 3.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .copyright .twitter-link:link, .copyright .twitter-link:visited {
@@ -571,9 +578,15 @@ body {
 
 @media only screen and (max-width: 43.75em) {
   .recipe {
-    position: absolute;
-    top: 6rem;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 15rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
     left: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 }
 
@@ -601,9 +614,9 @@ body {
   cursor: pointer;
   -webkit-user-select: none;
   user-select: none;
-  background-color: #615551;
+  background-image: linear-gradient(to bottom right, #fbdb89, #f48982);
   border-radius: 50%;
-  padding: .2rem 2rem;
+  padding: .1rem 2rem;
   font-size: 4rem;
   display: none;
   position: absolute;
@@ -613,7 +626,7 @@ body {
 }
 
 .recipe__btn-close:active {
-  background-color: #918581;
+  background-image: linear-gradient(to bottom right, #f48982, #fbdb89);
 }
 
 @media only screen and (max-width: 43.75em) {
@@ -641,6 +654,12 @@ body {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 20%)skewY(-6deg);
+}
+
+@media only screen and (max-width: 43.75em) {
+  .recipe__title {
+    font-size: 2.1rem;
+  }
 }
 
 .recipe__title span {
@@ -793,8 +812,8 @@ body {
 
 @media only screen and (max-width: 43.75em) {
   .recipe {
-    transition: transform .5s ease-in-out;
-    transform: translateX(-100%);
+    transition: transform .4s cubic-bezier(.51, .92, .24, 1.15);
+    transform: translateX(100%);
   }
 
   .recipe-show {
